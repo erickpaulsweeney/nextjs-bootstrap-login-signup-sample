@@ -1,6 +1,6 @@
 import { login } from "../../lib/users";
 
-const login = (req, res) => {
+const loginAPI = (req, res) => {
   if (req.method !== "POST") {
     res.status(405).json({
       error: "METHOD_NOT_ALLOWED",
@@ -13,4 +13,4 @@ const login = (req, res) => {
   res.status(200).json(login(username, password));
 };
 
-export default login;
+export default loginAPI;

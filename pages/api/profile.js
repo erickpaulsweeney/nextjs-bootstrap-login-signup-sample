@@ -1,7 +1,7 @@
 import { trueTypeOf } from "../../helpers";
 import { findUser, login, register, verifyToken } from "../../lib/users";
 
-const profile = (req, res) => {
+const profileAPI = (req, res) => {
   if (req.method !== "GET") {
     res.status(403).json({
       error: "METHOD_NOT_ALLOWED",
@@ -42,4 +42,4 @@ const profile = (req, res) => {
   });
 };
 
-export default profile;
+export default profileAPI;
