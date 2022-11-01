@@ -1,6 +1,6 @@
 import { login, register } from "../../lib/users";
 
-export default (req, res) => {
+const register = (req, res) => {
   if (req.method !== "POST") {
     res.status(405).json({
       error: "METHOD_NOT_ALLOWED",
@@ -13,3 +13,5 @@ export default (req, res) => {
 
   res.status(200).json(register(payload));
 };
+
+export default register;

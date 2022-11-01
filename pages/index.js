@@ -15,7 +15,7 @@ const Homepage = () => {
       <div className="card-body">
         <h5 className="card-title">Welcome!</h5>
         <p className="card-text">
-          If you've already registered then please log in, else please register.
+          If you&apos;ve already registered then please log in, else please register.
         </p>
         <Link href="auth/login">
           <p className="btn btn-primary" style={{ marginRight: "30px" }}>

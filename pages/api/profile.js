@@ -1,7 +1,7 @@
 import { trueTypeOf } from "../../helpers";
 import { findUser, login, register, verifyToken } from "../../lib/users";
 
-export default (req, res) => {
+const profile = (req, res) => {
   if (req.method !== "GET") {
     res.status(403).json({
       error: "METHOD_NOT_ALLOWED",
@@ -41,3 +41,5 @@ export default (req, res) => {
     message: "Not allowed.",
   });
 };
+
+export default profile;

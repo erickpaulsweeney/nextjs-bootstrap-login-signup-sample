@@ -61,7 +61,7 @@ export default function Dashboard() {
             </button>
           </div>
         </nav>
-        <h3 className="text-center my-4">{user.username}'s Profile</h3>
+        <h3 className="text-center my-4">{user.username}&apos;s Profile</h3>
         <p className="text-center my-3">
           <strong>Email: </strong>
           <br />
